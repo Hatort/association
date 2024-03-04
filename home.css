@@ -1,25 +1,107 @@
+/*page d'accueil*/
+
+.presentation {
+    background-image: url(image/maxresdefault.jpg);
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+img {
+    margin-top: 4em;
+    width: 80%;
+    height: 80%;
+}
+
 h1, h3, p {
+    color:white;
     text-align: center;
 }
 
-div{
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    height: 90%;
-}
 
-menu {
-    padding: 0;
-    margin: 30px;
-}
+/*nav barre responsive*/
 
-menu, li {
-    display: inline;
-    list-style: none;
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
 }
-
-menu, button {
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(69, 69, 69);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.conteneur-nav{
+    position: absolute;
+    width: 100%;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+nav label{
+    color:white;
     display: inline-block;
-    
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: rgb(69, 69, 69);
+}
+nav ul{
+    display: none;
+    list-style-type: none;
+    background-color: #555;
+}
+nav input[type=checkbox]:checked + ul{
+    display: flex;
+    flex-flow : column wrap;
+}
+nav ul li{
+    flex: 1 1 auto;
+    text-align: center;
+}
+nav > div > li{
+    color: white;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+}
+
+@media screen and (min-width: 980px){
+    .conteneur-nav{
+        position: static;
+    }
+    nav label, nav input{
+        display: none;
+    }
+    nav input[type=checkbox]:checked + ul, nav ul{
+        display: flex;
+        flex-flow: row wrap;
+        background-color: rgb(69, 69, 69);
+    }
+    nav ul li{
+        position: relative;
+    }
+    nav > div > ul > li > a{
+        color: white    ;
+    }
+    nav a{
+        border-bottom: 2px solid transparent;
+    }
+    nav a:hover{
+        color: orange;
+        border-bottom: 2px solid gold;
+    }
+    .button > a::after{
+        font-size: 12px;
+    }
+}
+
+.conteneur-contenu{
+  margin: 50px 20px;
+  height: 1500px;
 }
