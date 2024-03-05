@@ -1,22 +1,67 @@
 /*page d'accueil*/
 
-.presentation {
+.image {
     background-image: url(image/maxresdefault.jpg);
-    margin-left: auto;
-    margin-right: auto;
+    background-position: center;
+    background-size:cover;
+    background-color: black;
+    background-repeat: no-repeat;
     }
 
-img {
+.presentation{
     margin-top: 4em;
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
+    margin:auto;
+    font-size: 18px;
 }
 
-h1, h3, p {
-    color:white;
+body{
+    background-color: black;
+    color:rgb(63, 223, 84);
     text-align: center;
+} 
+
+img {
+    margin-top: 10em;
+    width: 20%;
+    height: 20%;
+    margin-bottom: 10em;
 }
 
+h1 {
+    color: rgb(241, 121, 8);
+} 
+
+h2 {
+    color: gold;
+    
+}
+
+.opening, .contact p {
+    list-style-position: inside;
+    text-align: left;
+}
+
+.opening {
+    margin-left: 20vw;
+}
+
+.contact p{
+    margin-left: 25vW;
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .opening{
+        margin-left: 0;
+    } 
+    .contact p{
+        text-align: left;
+        margin-left: 10vw;
+    }
+}
 
 /*nav barre responsive*/
 
@@ -51,7 +96,7 @@ nav label{
 nav ul{
     display: none;
     list-style-type: none;
-    background-color: #555;
+    background-color: #a38a44;
 }
 nav input[type=checkbox]:checked + ul{
     display: flex;
@@ -67,7 +112,7 @@ nav > div > li{
 nav a{
     display: block;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 10px 0px;
 }
 
@@ -99,9 +144,29 @@ nav a{
     .button > a::after{
         font-size: 12px;
     }
+  
+    .schedules, .contact {
+        width: 45%;
+        height: auto;
+        margin: 1%;
+        box-shadow: -10px -5px 5px orange;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .contact p{
+        text-align: left;
+        margin-left: 8vw;
+    }
+
+   
+    .presentation{
+        margin-top: 4em;
+        width: 90%;
+        height: 90%;
+        margin:auto;
+        font-size: 28px;
+    }
+    
 }
 
-.conteneur-contenu{
-  margin: 50px 20px;
-  height: 1500px;
-}
