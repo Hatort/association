@@ -63,87 +63,9 @@ h2 {
     }
 }
 
-/*nav barre responsive*/
 
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: Avenir, sans-serif;
-}
-nav{
-    width: 100%;
-    margin: 0 auto;
-    background-color: rgb(69, 69, 69);
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-}
-.conteneur-nav{
-    position: absolute;
-    width: 100%;
-}
-nav input[type=checkbox]{
-    display: none;
-}
-nav label{
-    color:white;
-    display: inline-block;
-    width: 100%;
-    padding: 10px 0px;
-    text-align: center;
-    background-color: rgb(69, 69, 69);
-}
-nav ul{
-    display: none;
-    list-style-type: none;
-    background-color: #a38a44;
-}
-nav input[type=checkbox]:checked + ul{
-    display: flex;
-    flex-flow : column wrap;
-}
-nav ul li{
-    flex: 1 1 auto;
-    text-align: center;
-}
-nav > div > li{
-    color: white;
-}
-nav a{
-    display: block;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 10px 0px;
-}
 
 @media screen and (min-width: 980px){
-    .conteneur-nav{
-        position: static;
-    }
-    nav label, nav input{
-        display: none;
-    }
-    nav input[type=checkbox]:checked + ul, nav ul{
-        display: flex;
-        flex-flow: row wrap;
-        background-color: rgb(69, 69, 69);
-    }
-    nav ul li{
-        position: relative;
-    }
-    nav > div > ul > li > a{
-        color: white    ;
-    }
-    nav a{
-        border-bottom: 2px solid transparent;
-    }
-    nav a:hover{
-        color: orange;
-        border-bottom: 2px solid gold;
-    }
-    .button > a::after{
-        font-size: 12px;
-    }
   
     .schedules, .contact {
         width: 45%;
