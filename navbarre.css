@@ -49,10 +49,7 @@ nav a{
     padding: 10px 0px;
 }
 
-@media screen and (min-width: 980px){
-    .conteneur-nav{
-        position: static;
-    }
+@media screen and (min-width: 900px){
     nav label, nav input{
         display: none;
     }
