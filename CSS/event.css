@@ -1,0 +1,61 @@
+.image {
+    background-image: url(../picture/background/project_fantasy_hero-e1677681448875.jpg);
+    background-position: center;
+    background-size:cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    }
+
+.preview {
+    background: linear-gradient(0.25turn, #3f87a6, #f69d3c, #e7c770);
+    color:black;
+}
+
+h3{
+    color: rgb(41, 56, 122)
+}
+
+.page-event{
+    color: orange;
+}
+
+.image img {
+    margin-top: 8em;
+    width: 20%;
+    height: 20%;
+    margin-bottom: 4em;
+}
+
+body{
+    background-color: black;
+    color:rgb(63, 223, 84);
+    text-align: center;
+} 
+
+.games, .preview, .float  {
+    padding: 1em;
+}
+
+.games, .image, .preview {
+    box-shadow: 0px 5px 5px orange;
+}
+
+
+h2, h1 {
+    color: gold;
+    
+}
+
+.logo {
+    width: 25%;
+    height: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .preview, .games {
+        font-size: 12px;
+    }
+    .preview h3, .games h2 {
+        font-size: 18px;
+    }
+} 

@@ -1,11 +1,14 @@
 .image {
-    background-image: url(image/maxresdefault.jpg);
+    background-image: url(../picture/background/maxresdefault.jpg);
     background-position: center;
     background-size:cover;
     background-color: black;
     background-repeat: no-repeat;
     }
 
+.welcome {
+    color: orange;
+}
 .image img {
     margin-top: 8em;
     width: 20%;
